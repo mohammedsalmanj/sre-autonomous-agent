@@ -1,0 +1,10 @@
+requests==2.31.0
+pyyaml==6.0.1
+# pydantic  # Removed due to compilation issues on Windows, but FastAPI might need it. Let's try installing FastAPI without explicit pydantic compilation if possible, or hope wheels exist.
+# Actually, FastAPI depends on Pydantic. Windows compilation issues with Pydantic are usually solved by using pre-built wheels. 
+# Attempting to add fastapi and uvicorn.
+fastapi==0.109.0
+uvicorn==0.27.0
+structlog==24.1.0
+click==8.1.7
+psutil==5.9.8
